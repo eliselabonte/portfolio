@@ -263,8 +263,12 @@ img.about-me-img    {
     border-color: #00B2AF;
 }
 
-div.about-me-section p  {
+div.about-me-p  {
     margin-bottom:20px;
+}
+
+p.text-right    {
+    text-align:right;
 }
 
 div.about-me-section p > a  {
