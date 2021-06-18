@@ -18,7 +18,7 @@ header    {
 
 
 body   {
-    background-color: #FD9380;
+    background: linear-gradient(#FD9380, #FFCE8E);
 
 }
 
@@ -31,27 +31,104 @@ header {
 
 }
 
+footer  {
+    height:50px;
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    vertical-align: baseline;
+    padding:20px;
+}
+
 ul {
     display:flex;
     flex-direction:row;
 }
 
+li  {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin:5px;
+}
+
 img {
     width:200px;
     height:auto;
+    border:5px solid #87E2D0;
+    border-radius:10px;
 }
 
 h1  {
     font-size: 40px;
+    color:black;
+    font-family: 'Monoton', cursive;
 }
 
 h2  {
     font-size: 30px;
+    color:black;
+    font-family: 'Fraunces', serif;
+    margin:5px;
 }
 
 h3  {
-    font-size: 25px;
+    font-size: 20px;
+    color:white;
+    font-family: 'Fraunces', serif;
+    margin:5px;
 }
+
+p   {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight:100;
+    width:500px;
+    text-align:justify;
+    margin:10px;
+    font-size:20px;
+}
+
+form    {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    margin:5px;
+}
+
+input, label   {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    
+}
+
+input   {
+    margin-bottom:10px;
+    background-color:#D1EBD0;
+    border-radius:10px;
+}
+
+button  {
+    width:100px;
+    margin:5px;
+    background: linear-gradient(90deg, #D1EBD0, #87E2D0);
+    border-radius: 10px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
 
 
 
@@ -69,7 +146,69 @@ div.content    {
     
 }
 
+div.portfolio-container {
+    display:flex;
+    flex-direction: column;
+    margin:20px;
+}
+
 div.portfolio-child   {
     width: 500px;
     height: 500px;
+}
+
+div.horiseon    {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+
+}
+
+div.watercolors   {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+
+}
+
+div.generic     {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+
+}
+
+div.horiseon-a    {}
+
+div.watercolors-a   {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.generic-a     {}
+
+
+div.contact-section {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+div.about-me-section    {
+    margin:20px;
+    background: linear-gradient(90deg, #D1EBD0, #87E2D0);
+    border:5px solid #00B2AF;
+}
+
+div.contact-section     {
+    margin:20px;
+    display:flex;
+    flex-direction:column;
+    margin:5px;
 }
