@@ -2,6 +2,9 @@
     font-size:20px;
 }
 
+html{
+    max-width:100%;
+}
 
 header, footer    {
     z-index:100;
@@ -18,7 +21,8 @@ header    {
 
 
 body   {
-    background: linear-gradient(#FD9380, #FFCE8E);
+    background: linear-gradient(#FD9380, #FFCE8E);  
+    overflow-x:hidden;
 
 }
 
@@ -28,6 +32,7 @@ header {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    width:100%;
 
 }
 
@@ -37,6 +42,7 @@ footer  {
     font-size: 20px;
     vertical-align: baseline;
     padding:20px;
+    width:100%;
 }
 
 ul {
@@ -108,7 +114,7 @@ input   {
 button  {
     width:100px;
     margin:5px;
-    background: linear-gradient(90deg, #D1EBD0, #87E2D0);
+    background: linear-gradient(90deg, #D1EBD0, #87E2D0, #2CD2AB);
     border-radius: 10px;
 }
 
@@ -118,6 +124,7 @@ a:link {
   
 a:visited {
     text-decoration: none;
+    color:black;
 }
 
 a:hover {
@@ -181,6 +188,13 @@ div.generic     {
 
 }
 
+div.cow  {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+}     
+
 div.horiseon-a    {}
 
 div.watercolors-a   {
@@ -192,18 +206,36 @@ div.watercolors-a   {
 
 div.generic-a     {}
 
+div.cow-a   {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 div.contact-section {
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    height:100vh;
 }
 
 div.about-me-section    {
     margin:20px;
-    background: linear-gradient(90deg, #D1EBD0, #87E2D0);
+    margin-top:50px;
+    background: linear-gradient(90deg, #D1EBD0, #87E2D0, #2CD2AB);
     border:5px solid #00B2AF;
+    height:100vh;
+}
+
+div.about-me-section h2 {
+    margin:20px;
+}
+
+div.about-me-spacer     {
+    height:5vh;
 }
 
 div.contact-section     {
@@ -212,3 +244,113 @@ div.contact-section     {
     flex-direction:column;
     margin:5px;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 600px)    {
+
+    body    {
+        background-color:blue;
+    }
+
+
+
+    /*     
+    header  {
+        width:90vw;
+        height:250px;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-end;
+        align-items:flex-start;
+        text-align:center;
+    }
+
+    nav   {
+        position:absolute;
+        text-align:left;
+        top:30%;
+        left:0;
+        width:80%;
+        border-radius:5px;
+        display:none;
+    }
+
+    ul  {
+        nav ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+          
+          
+    nav li{
+        margin-bottom:1em;
+        margin-left:1em;  
+     }
+     nav a {
+        color:rgb(66, 73, 203);
+        text-decoration:none;
+        font-size:1.2rem;
+      }
+      
+      
+      nav a:hover {
+        color: black;
+      }
+      
+      
+      
+      .nav-toggle{
+        display:none;
+      }
+      
+      #nav-toggle:checked ~ nav{
+        display:block;
+      }
+      
+      
+      
+      .nav-toggle-label{
+        position:absolute;
+        top:0;
+        left:0;
+        margin-left:1em;
+        margin-right:1em;
+        display:flex;
+        align-items:center;
+      }
+      
+      
+      .nav-toggle-label span,
+      .nav-toggle-label span ::before,
+      .nav-toggle-label span ::after {
+        display:block;
+        background:rgb(66, 73, 203);
+        height:5px;
+        width:2em;
+        border-radius:2px;
+        position:relative;
+      }
+      
+      .nav-toggle-label span ::before,
+      .nav-toggle-label span ::after {
+        content:'';
+        position: absolute;
+      }
+      .nav-toggle-label span ::before {
+        bottom:7px;
+      }
+      
+      .nav-toggle-label span ::after {
+        top:7px;
+      }
+      
+      
+      .nav-bar{
+        font-size:15px;
+      } */
+    
+
+}
+
