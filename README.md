@@ -1,5 +1,7 @@
 # Portfolio created in bootcamp
 
+## https://eliselabonte.github.io/portfolio/
+
 ## this is a portfolio to showcase my work, created in bootcamp and written from scratch.
 
 ## the requirements for this assignment were the following:
