@@ -33,7 +33,7 @@ header {
     flex-direction:row;
     justify-content:space-between;
     width:100%;
-
+    opacity:0.8;
 }
 
 footer  {
@@ -97,6 +97,9 @@ form    {
     align-items: center;
     width:200px;
     margin:5px;
+    background-color:white;
+    padding:10px;
+    border-radius:20px;
 }
 
 input, label   {
@@ -115,6 +118,12 @@ button  {
     margin:5px;
     background: linear-gradient(90deg, #D1EBD0, #87E2D0, #2CD2AB);
     border-radius: 10px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-transform:uppercase;
+}
+
+a   {
+    color:black;
 }
 
 a:link {
@@ -134,11 +143,17 @@ a:active {
     text-decoration: underline;
 }
 
-
-
+a img:hover {
+    opacity:0.8;
+}
 
 
 /* class selectors */
+
+h2.title    {
+    font-size:35px;
+    font-weight:500;
+}
 
 div.intro   {
     display:flex;
@@ -198,7 +213,9 @@ div.cow  {
     align-items:center;
 }     
 
-div.horiseon-a    {}
+div.horiseon-a    {
+    width:600px;
+}
 
 div.watercolors-a   {
     display:flex;
@@ -207,7 +224,9 @@ div.watercolors-a   {
     align-items: center;
 }
 
-div.generic-a     {}
+div.generic-a     {
+   
+}
 
 div.cow-a   {
     display:flex;
@@ -225,13 +244,7 @@ p.watercolors-p {
 }
 
 
-div.contact-section {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+
 
 div.about-me-section    {
     margin:20px;
@@ -249,7 +262,7 @@ div.about-me-section h2 {
 }
 
 div.about-me-spacer     {
-    height:5vh;
+    height:6vh;
 }
 
 div.about-me-section h3   {
@@ -275,12 +288,28 @@ div.about-me-section p > a  {
     border:2px solid #FFCE8E;
 }
 
+
 div.contact-section     {
     margin:20px;
+    width:100%;
+    left:-10px;
+    border-top:5px solid #00B2AF;
+    border-bottom:5px solid #00B2AF;
     display:flex;
     flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:60vh;    
     margin:5px;
+    background-image: url(https://images.assetsdelivery.com/compings_v2/cocoartua/cocoartua2006/cocoartua200600010.jpg);
 }
+
+div.contact-section h2  {
+    background-color:white;
+    border-radius:10px;
+    opacity:0.8;
+}
+
 
 /* media queries */
 
@@ -390,4 +419,3 @@ div.contact-section     {
     
 
 }
-
