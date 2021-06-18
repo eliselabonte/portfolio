@@ -1,0 +1,75 @@
+*   {
+    font-size:20px;
+}
+
+
+header, footer    {
+    z-index:100;
+    background-image: url(https://image.shutterstock.com/image-vector/seamless-pattern-abstract-vector-background-260nw-710903038.jpg);
+    width:100%;
+    
+
+}
+
+header    {
+    position:fixed;
+    top:0;
+}
+
+
+body   {
+    background-color: #FD9380;
+
+}
+
+
+header {
+    background-color: ;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+
+ul {
+    display:flex;
+    flex-direction:row;
+}
+
+img {
+    width:200px;
+    height:auto;
+}
+
+h1  {
+    font-size: 40px;
+}
+
+h2  {
+    font-size: 30px;
+}
+
+h3  {
+    font-size: 25px;
+}
+
+
+
+/* class selectors */
+
+div.intro   {
+    display:flex;
+    flex-direction:column;
+}
+
+div.content    {
+    display:flex;
+    flex-direction:column;
+    margin-top:100px;
+    
+}
+
+div.portfolio-child   {
+    width: 500px;
+    height: 500px;
+}
