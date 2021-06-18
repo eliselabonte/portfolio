@@ -85,7 +85,6 @@ h3  {
 p   {
     font-family: 'Encode Sans Condensed', sans-serif;
     font-weight:100;
-    width:500px;
     text-align:justify;
     margin:10px;
     font-size:20px;
@@ -164,6 +163,10 @@ div.portfolio-child   {
     height: 500px;
 }
 
+div.portfolio-child p   {
+    width:500px;
+}
+
 div.horiseon    {
     display:flex;
     flex-direction:row;
@@ -213,6 +216,14 @@ div.cow-a   {
     align-items: center;
 }
 
+div.watercolors img {
+    width:400px;
+}
+
+p.watercolors-p {
+    font-size:30px;
+}
+
 
 div.contact-section {
     display:flex;
@@ -227,7 +238,10 @@ div.about-me-section    {
     margin-top:50px;
     background: linear-gradient(90deg, #D1EBD0, #87E2D0, #2CD2AB);
     border:5px solid #00B2AF;
-    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 div.about-me-section h2 {
@@ -236,6 +250,25 @@ div.about-me-section h2 {
 
 div.about-me-spacer     {
     height:5vh;
+}
+
+div.about-me-section h3   {
+    text-align:right;
+    margin-top:20px;
+}
+
+img.about-me-img    {
+    height:400px;
+    width:auto;
+    border-color: #00B2AF;
+}
+
+div.about-me-section p  {
+    margin-bottom:20px;
+}
+
+div.about-me-section p > a  {
+    border:2px solid #FFCE8E;
 }
 
 div.contact-section     {
