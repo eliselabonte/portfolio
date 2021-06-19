@@ -400,6 +400,10 @@ div.contact-section h2  {
         flex-direction:column-reverse;
     }
 
+    span.right-align > div.link-block  {
+        align-items:center;
+    }
+
     span.line-break {
         display:inline-block;
         background-color: #00B2AF;
