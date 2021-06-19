@@ -174,6 +174,7 @@ div.content    {
 
 div.content h2  {
     color:white;
+    font-size:40px;
 }
 
 div.portfolio-container {
@@ -182,70 +183,59 @@ div.portfolio-container {
     margin:20px;
 }
 
+
 div.portfolio-child   {
     width: 500px;
     height: 500px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
 }
 
 div.portfolio-child p   {
     width:500px;
 }
 
-div.horiseon    {
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:center;
 
-}
-
-div.watercolors   {
+div.watercolors, div.portfolio-child   {
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
     align-items:center;
-
 }
 
-div.generic     {
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:center;
-
-}
-
-div.cow  {
+div.cow, div.portfolio-child{
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
     align-items:center;
-}     
-
-div.horiseon-a    {
-    width:600px;
 }
 
-div.watercolors-a   {
+div.horiseon, div.portfolio-child{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+div.generic, div.portfolio-child{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+
+div.link-block   {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-div.generic-a     {
-   
-}
 
-div.cow-a   {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-div.watercolors img {
-    width:400px;
+img.watercolors-img {
+    width:300px;
 }
 
 p.watercolors-p {
@@ -325,104 +315,87 @@ div.contact-section h2  {
 
 @media only screen and (max-width: 600px)    {
 
-    body    {
-        background-color:blue;
-    }
-
-
-
-    /*     
+    
+        
     header  {
-        width:90vw;
-        height:250px;
         display:flex;
         flex-direction:row;
-        justify-content:flex-end;
-        align-items:flex-start;
-        text-align:center;
+        justify-content:space-between;
+    }
+
+    header h1   {
+        font-size:1.5em;
+    }
+
+    h2.title    {
+        font-size: 1.5em;
     }
 
     nav   {
-        position:absolute;
-        text-align:left;
+        text-align:right;
         top:30%;
         left:0;
         width:80%;
         border-radius:5px;
-        display:none;
     }
 
     ul  {
-        nav ul {
-        margin:0;
-        padding:0;
-        list-style:none;
+        display:flex;
+        flex-direction:column;s
+    
     }
           
           
     nav li{
-        margin-bottom:1em;
-        margin-left:1em;  
+        margin:2px;
      }
+
      nav a {
-        color:rgb(66, 73, 203);
         text-decoration:none;
-        font-size:1.2rem;
+        font-size:1rem;
+      }
+
+      a.no-display  {
+          display:none;
       }
       
-      
-      nav a:hover {
-        color: black;
+      h2, p {
+          font-size:1.5rem;
+      }
+
+      div.portfolio-child img   {
+          width:100px;
+          height:auto;
       }
       
-      
-      
-      .nav-toggle{
+      a.no-display  {
         display:none;
+        }
+
+      div.content   {
+          width:100vw;
+        
       }
-      
-      #nav-toggle:checked ~ nav{
-        display:block;
+
+      div.portfolio-container   {
+          width:100%;
       }
-      
-      
-      
-      .nav-toggle-label{
-        position:absolute;
-        top:0;
-        left:0;
-        margin-left:1em;
-        margin-right:1em;
-        display:flex;
-        align-items:center;
+
+      div.cow, div.portfolio-child   {
+         width: 100vw;
+         display:column;
+         align-items:flex-end;
       }
-      
-      
-      .nav-toggle-label span,
-      .nav-toggle-label span ::before,
-      .nav-toggle-label span ::after {
-        display:block;
-        background:rgb(66, 73, 203);
-        height:5px;
-        width:2em;
-        border-radius:2px;
-        position:relative;
+
+      div.portfolio-child p {
+          width:50vw;
+          font-size:;
       }
-      
-      .nav-toggle-label span ::before,
-      .nav-toggle-label span ::after {
-        content:'';
-        position: absolute;
+
+      div.about-me p {
+          font-size:;
       }
-      .nav-toggle-label span ::before {
-        bottom:7px;
-      }
+
       
-      .nav-toggle-label span ::after {
-        top:7px;
-      }
+
       
-      
-      .nav-bar{
-        font-size:15px;
-      } */
