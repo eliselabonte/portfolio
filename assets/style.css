@@ -22,7 +22,7 @@ body   {
     display:flex;
     flex-direction:column;
     align-items: center;
-
+    width:100%;
 }
 
 
@@ -55,7 +55,7 @@ li  {
 }
 
 img {
-    width:200px;
+    width:30vw;
     height:auto;
     border:5px solid #87E2D0;
     border-radius:10px;
@@ -164,7 +164,7 @@ figure.top     {
     height:5vh;
 }
 
-div.content    {
+main.content    {
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -173,37 +173,32 @@ div.content    {
     
 }
 
-div.content h2  {
+main.content h2  {
     color:white;
     font-size:40px;
 }
 
-main.portfolio-container {
+div.portfolio-container {
     display:flex;
     flex-direction: column;
-    margin:20px;
+    margin:10px;
     width:80vw;
 }
 
 
-span.portfolio-child   {
-    width: 500px;
-    height: 500px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-}
 
 span.portfolio-child p   {
-    width:500px;
+    width:100%;
+    line-height:30px;
 }
 
 
 span.portfolio-child   {
     display:flex;
-    width:500px;
+    width:100%;
     height:auto;
-    margin-bottom:20px;
+    margin:20px;
+    display:flex;
     flex-direction:row;
     justify-content:flex-end;
     align-items:center;
@@ -213,9 +208,12 @@ div.link-block   {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin:10px;
 }
 
+span.right-align > div.link-block  {
+    align-items:flex-end;
+}
 
 img.watercolors-img {
     width:300px;
