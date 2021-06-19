@@ -155,11 +155,12 @@ h2.title    {
 }
 
 div.intro   {
+    margin:5px;
     display:flex;
     flex-direction:column;
 }
 
-div.top     {
+figure.top     {
     height:5vh;
 }
 
@@ -177,7 +178,7 @@ div.content h2  {
     font-size:40px;
 }
 
-div.portfolio-container {
+main.portfolio-container {
     display:flex;
     flex-direction: column;
     margin:20px;
@@ -185,7 +186,7 @@ div.portfolio-container {
 }
 
 
-div.portfolio-child   {
+span.portfolio-child   {
     width: 500px;
     height: 500px;
     display:flex;
@@ -193,39 +194,20 @@ div.portfolio-child   {
     align-items:center;
 }
 
-div.portfolio-child p   {
+span.portfolio-child p   {
     width:500px;
 }
 
 
-div.watercolors, div.portfolio-child   {
+span.portfolio-child   {
     display:flex;
+    width:500px;
+    height:auto;
+    margin-bottom:20px;
     flex-direction:row;
     justify-content:flex-end;
     align-items:center;
 }
-
-div.cow, div.portfolio-child{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-    align-items:center;
-}
-
-div.horiseon, div.portfolio-child{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:center;
-}
-
-div.generic, div.portfolio-child{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:center;
-}
-
 
 div.link-block   {
     display:flex;
@@ -246,7 +228,7 @@ p.watercolors-p {
 
 
 
-div.about-me-section    {
+article.about-me-section    {
     margin:20px;
     margin-top:50px;
     left:50px;
@@ -258,7 +240,7 @@ div.about-me-section    {
     justify-content:center;
 }
 
-div.about-me-section h2 {
+article.about-me-section h2 {
     margin:20px;
 }
 
@@ -266,7 +248,7 @@ div.about-me-spacer     {
     height:6vh;
 }
 
-div.about-me-section h3   {
+article.about-me-section h3   {
     text-align:right;
     margin-top:20px;
 }
@@ -277,7 +259,7 @@ img.about-me-img    {
     border-color: #00B2AF;
 }
 
-div.about-me-p  {
+article.about-me-p  {
     margin-bottom:20px;
 }
 
@@ -285,7 +267,11 @@ p.text-right    {
     text-align:right;
 }
 
-div.about-me-section p > a  {
+span.line-break {
+    display:none;
+}
+
+article.about-me-section p > a  {
     border:2px solid #FFCE8E;
 }
 
@@ -344,7 +330,7 @@ div.contact-section h2  {
         text-align:right;
         top:30%;
         left:0;
-        width:80%;
+        width:30%;
         border-radius:5px;
     }
 
@@ -372,9 +358,13 @@ div.contact-section h2  {
           font-size:1.5rem;
       }
 
-      div.portfolio-child img   {
-          width:100px;
-          height:auto;
+      div.intro {
+          width:100%;
+      }
+
+      div.content    {
+         margin:50px;
+         width: 90vw;
       }
       
       a.no-display  {
@@ -382,18 +372,46 @@ div.contact-section h2  {
         }
      
 
-      div.cow, div.portfolio-child   {
-         display:column;
-         align-items:flex-end;
-      }
+    span.portfolio-child   {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        margin-bottom: 50px;
+    }
+   
+    span.portfolio-child a{
+        display:flex;
+        justify-content: center;
+    }
 
-      div.portfolio-child p {
-          width:50vw;
+    span.portfolio-child img   {
+        width:90%;
+        height:auto;
+    }
+
+      
+    span.portfolio-child p {
+          width:100%;
+          font-size:20px;
   
       }
 
-      div.about-me p {
+    span.right-align    {
+        flex-direction:column-reverse;
+    }
 
+    span.line-break {
+        display:inline-block;
+        background-color: #00B2AF;
+        height:5px;
+        width:80vw;
+        border-radius:2px;
+    }
+
+    div.about-me-spacer {
+        display:none;
       }
 
       
