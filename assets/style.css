@@ -176,8 +176,8 @@ figure.top     {
 }
 
 section.self-image  {
-    width:97vw;
-    /* margin-left:-50px; */
+    width:110vw;
+    /* margin-left:-10px; */
     height:auto;
     background: var(--tricolor);
     border-radius:0px 70px 70px 0px;
@@ -400,7 +400,7 @@ div.contact-section h2  {
     section.self-image  {
         position:relative;
         margin:0px;
-        margin-left:-20px;
+        width:95vw;
     }
 }
 
@@ -464,7 +464,7 @@ div.contact-section h2  {
 
 
       section.self-image {
-        width:110vw;
+        width:100vw;
         border-radius:0px;
     }
 
