@@ -16,7 +16,6 @@ header, footer    {
     z-index:100;
     background-image: url(https://image.shutterstock.com/image-vector/seamless-pattern-abstract-vector-background-260nw-710903038.jpg);
     width:110%;
-    
 
 }
 
@@ -35,8 +34,8 @@ body   {
 header {
     position:fixed;
     top:0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5vw;
+    padding-right: 6vw;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -193,7 +192,7 @@ main.content    {
     flex-direction:column;
     justify-content: center;
     align-items:flex-start;
-    margin-top:15vh;
+    margin-top:25vh;
     margin-bottom:50px;
 }
 
