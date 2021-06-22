@@ -38,8 +38,6 @@ body   {
 header {
     position:fixed;
     top:0;
-    /* padding-left: 5vw;
-    padding-right: 6vw; */
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -89,7 +87,7 @@ h3  {
 }
 
 
-
+/* about me tect block */
 div.about-me-p p   {
     font-family: 'Encode Sans Condensed', sans-serif;
     font-weight:100;
@@ -111,6 +109,7 @@ form    {
     border-radius:20px;
 }
 
+/* form style (contact section) */
 input, label   {
     font-family: 'Encode Sans Condensed', sans-serif;
     
@@ -131,7 +130,7 @@ button  {
     text-transform:uppercase;
 }
 
-
+/* links in nav bar */
 a   {
     color:var(--black);
 }
@@ -153,6 +152,8 @@ a:active {
     text-decoration: underline;
 }
 
+
+/* image links in work section */
 a img:hover {
     opacity:0.8;
 }
@@ -160,24 +161,28 @@ a img:hover {
 
 /* class selectors */
 
+/* "web developer" text in header */
 h2.title    {
     font-size:35px;
     font-weight:500;
 }
 
+/* Name and title in header */
 div.intro   {
     margin:5px;
     display:flex;
     flex-direction:column;
 }
 
+/* spacer for jump to top of page */
 figure.top     {
     height:5vh;
 }
 
-section.self-image  {
+
+/* bar that floats behind the content on fullscreen */
+section.self-bar  {
     width:110vw;
-    /* margin-left:-10px; */
     height:auto;
     background: var(--tricolor);
     border-radius:0px 70px 70px 0px;
@@ -189,8 +194,8 @@ section.self-image  {
     z-index:0;
 }
 
-
-img.about-me-img {
+/* round img and align to left */
+img.self-img {
     border:5px solid var(--teal-dark);
     border-radius:50%;
     height:150px;
@@ -198,7 +203,7 @@ img.about-me-img {
     margin:10px;
 }
 
-
+/* about-me and work (portfolio) section */
 main.content    {
     display:flex;
     flex-direction:column;
@@ -209,10 +214,12 @@ main.content    {
 
 }
 
+/* float in front of self-bar */
 article.about-me-section, section.portfolio-container, div.contact-section   {
     z-index:1;
 }
 
+/* "work" show text vertically */
 h2.portfolio-title  {
     color:var(--white);
     font-size:40px;
@@ -222,6 +229,7 @@ h2.portfolio-title  {
     margin:20px;
 }
 
+/* holds link-container and portfolio-title */
 section.portfolio-container {
     display:flex;
     flex-direction: row;
@@ -231,6 +239,7 @@ section.portfolio-container {
     width:80vw;
 }
 
+/* border on left, curved on right, wrap contents*/
 div.link-container  {
     border-left: 5px solid var(--teal-dark);
     display:flex;
@@ -243,7 +252,7 @@ div.link-container  {
     padding-bottom:20px;
 }
 
-
+/* style for each site link and image */
 span.link-block   {
     display:flex;
     height:auto;
@@ -254,6 +263,7 @@ span.link-block   {
     margin:5px;
 }
 
+/* overlap site name on image */
 a.work-title    {
     position:absolute;
     margin:10px;
@@ -261,18 +271,7 @@ a.work-title    {
     background: rgba(250, 250, 250, 0.7);
 }
 
-
-span.portfolio-child p   {
-    width:100%;
-    line-height:30px;
-}
-
-
-
-span.right-align > div.link-block  {
-    align-items:flex-end;
-}
-
+/* style for site previews */
 span.link-block a img   {
     width:300px;
     height:auto;
@@ -280,15 +279,12 @@ span.link-block a img   {
     border-radius:10px;
 }
 
-img.watercolors-img {
-    width:300px;
+/* make watercolor site image larger */
+span.link-block a img.watercolors-img {
+    width:400px;
 }
 
-p.watercolors-p {
-    font-size:30px;
-}
-
-
+/* style for about-me */
 article.about-me-section    {
     margin:20px;
     margin-top:50px;
@@ -299,6 +295,7 @@ article.about-me-section    {
     justify-content:center;
 }
 
+/* show h2 text vertically */
 article.about-me-section h2 {
     margin:20px;
     writing-mode: vertical-rl;
@@ -306,11 +303,12 @@ article.about-me-section h2 {
     color:var(--white);
 }
 
+/* for page jump */
 div.about-me-spacer     {
     height:6vh;
 }
 
-
+/* about me paragraph style */
 div.about-me-p  {
     border-radius: 0px 70px 70px 0px;
     background: var(--blue-gradient);
@@ -322,16 +320,7 @@ div.about-me-p  {
     line-height:30px;
 }
 
-p.text-right    {
-    text-align:right;
-}
-
-
-article.about-me-section p > a  {
-    border:2px solid var(--yellow-orange);
-}
-
-
+/* contact section background is royalty-free and seamless. */
 div.contact-section     {
     width:100%;
     left:-10px;
@@ -347,6 +336,7 @@ div.contact-section     {
     background-image: url(https://images.assetsdelivery.com/compings_v2/cocoartua/cocoartua2006/cocoartua200600010.jpg);
 }
 
+/* phone and email. row display on fullscreen, background white. */
 span.contact-info   {
     margin-top:30px;
     width:60vw;
@@ -358,14 +348,12 @@ span.contact-info   {
     background-color: rgba(250, 250, 250, 0.9);
 }
 
-
 span.contact-info p {
     margin-left:30px;
     margin-right:30px;
     font-size:20px;    
     font-family: 'Fraunces', serif; 
 }
-
 
 div.contact-section h2  {
     background-color: rgba(250, 250, 250, 0.9);
@@ -377,17 +365,9 @@ div.contact-section h2  {
 
 
 
-
-/* media queries */
-
-/* @media only screen and (max-width:826px)    {
-    section.self-image {
-        margin-top:6vh;
-    }
-} */
-
+/* self-bar moves up a bit to accomodate header */
 @media only screen and (min-width:1218px)   {
-    section.self-image  {
+    section.self-bar  {
         margin-top:-1125px;
     }
 
@@ -395,18 +375,19 @@ div.contact-section h2  {
 }
 
 
-
+/* self-bar is now relative to other content */
 @media only screen and (max-width: 910px)   {
-    section.self-image  {
+    section.self-bar  {
         position:relative;
         margin:0px;
         width:95vw;
     }
 }
 
-
+/* mobile display */
 @media only screen and (max-width: 800px)    {
-        
+     
+    /* resize header */
     header  {
         display:flex;
         flex-direction:row;
@@ -427,6 +408,7 @@ div.contact-section h2  {
         font-size: 1.5em;
     }
 
+    /* nav bar becomes column */
     nav   {
         text-align:right;
         padding:5px;
@@ -439,44 +421,42 @@ div.contact-section h2  {
 
     }
     
-          
-    main.content    {
-        margin:0px;
-        margin-top:100px;
-    }
-          
+    
     nav li {
         margin:2px;
     }
 
-     nav a {
+    nav a {
         text-decoration:none;
         font-size:1rem;
     }
 
-      a.no-display  {
-          display:none;
+    /*about-me, top of page, and contact nav link, no display on mobile */
+    a.no-display  {
+        display:none;
     }
       
-      h2, p {
-          font-size:1.5rem;
+    /* about-me and portfolio changes */
+    main.content    {
+        margin:0px;
+        margin-top:100px;
+    }
+         
+    h2, p {
+        font-size:1.5rem;
     }
 
-
-      section.self-image {
+    /* self-bar becomes full width of page */
+    section.self-bar {
         width:100vw;
         border-radius:0px;
     }
 
-    section.self-image img  {
+    section.self-bar img  {
         margin-right:50px;
     }
-      
-      a.no-display  {
-        display:none;
-    }
      
-
+    /* portfolio links become stacked in column and resize */
     span.portfolio-child   {
         display:flex;
         flex-direction: column;
@@ -486,21 +466,18 @@ div.contact-section h2  {
         margin-bottom: 50px;
     }
    
-    span.portfolio-child a{
-        display:flex;
-        justify-content: center;
-    }
-
+    /* page title font shrink */
     span.link-block a>h3    {
         font-size:10px;
     }
 
+    /* page image shrink */
     span.link-block a>img   {
         width:100%;
         height:auto;
     }
 
-      
+    /* shift number and email display to column */
     span.contact-info {
         flex-direction:column;
         align-items:center;
@@ -511,17 +488,7 @@ div.contact-section h2  {
         font-size:15px;
     }
 
-
-    span.right-align    {
-        flex-direction:column-reverse;
-    }
-
-    span.right-align > div.link-block  {
-        align-items:center;
-    }
-
-
-
+    /* remove spacer used for page jumps */
     div.about-me-spacer {
         display:none;
       }
