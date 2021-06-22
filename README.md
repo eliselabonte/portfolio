@@ -10,3 +10,4 @@
 ### 2. portfolio should showcase work
 ### 3. code should implement CSS Flexbox, media queries, and variables
 
+![website screenshot](https://github.com/[eliselabonte]/[portfolio]/assets/[main]/portfolio-img.jpg?raw=true)
