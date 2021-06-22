@@ -203,7 +203,7 @@ main.content    {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
     margin-top:25vh;
     margin-bottom:50px;
 
@@ -466,6 +466,10 @@ div.contact-section h2  {
       section.self-image {
         width:110vw;
         border-radius:0px;
+    }
+
+    section.self-image img  {
+        margin-right:50px;
     }
       
       a.no-display  {
