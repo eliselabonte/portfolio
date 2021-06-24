@@ -190,7 +190,7 @@ section.self-bar  {
     justify-content: flex-end;
     align-items:flex-start;
     position:fixed;
-    margin-top:-1150px;
+    margin-top: -1150px;
     z-index:0;
 }
 
@@ -368,7 +368,7 @@ div.contact-section h2  {
 /* self-bar moves up a bit to accomodate header */
 @media only screen and (min-width:1218px)   {
     section.self-bar  {
-        margin-top:-1125px;
+        margin-top:-175vh;
     }
 
 
