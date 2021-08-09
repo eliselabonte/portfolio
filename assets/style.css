@@ -27,11 +27,8 @@ header, footer    {
 
 /* body style. Overflow-x hidden to remove horizontal scroll bar. */
 body   {
-    background: var(--orange-gradient); 
-    display:flex;
-    flex-direction:column;
-    align-items: flex-start;
-    width:100%;
+    background: var(--orange-gradient);
+    width:100vw;
 }
 
 
@@ -53,10 +50,16 @@ footer  {
     text-align: center;
 }
 
+nav {
+    display:flex;
+    align-items: flex-end;
+}
+
 /* fullscreen nav bar is row display */
 ul {
     display:flex;
     flex-direction:row;
+    margin-bottom:10px;
 }
 
 li  {
@@ -146,6 +149,7 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+    color:var(--peach);
 }
 
 a:active {
@@ -206,10 +210,11 @@ img.self-img {
 
 /* about-me and work (portfolio) section */
 main.content    {
+    width:100%;
     display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items:center;
+    align-items:flex-start;
     margin-top:25vh;
     margin-bottom:50px;
 
@@ -280,8 +285,8 @@ span.link-block a img   {
     border-radius:10px;
 }
 
-/* make watercolor site image larger */
-span.link-block a img.watercolors-img {
+/* make most recent site image larger */
+span.link-block a img.most-recent {
     width:400px;
 }
 
@@ -366,13 +371,11 @@ div.contact-section h2  {
 
 /* mobile display */
 @media only screen and (max-width: 800px)    {
-     
     /* resize header */
     header  {
         display:flex;
         flex-direction:row;
         justify-content:space-around;
-
     }
 
     header h1   {
@@ -398,9 +401,7 @@ div.contact-section h2  {
     .nav-list  {
         display:flex;
         flex-direction:column;
-
     }
-    
     
     nav li {
         margin:2px;
@@ -415,13 +416,13 @@ div.contact-section h2  {
     a.no-display  {
         display:none;
     }
-      
+
     /* about-me and portfolio changes */
     main.content    {
         margin:0px;
         margin-top:100px;
     }
-         
+
     h2, p {
         font-size:1.5rem;
     }
@@ -430,12 +431,17 @@ div.contact-section h2  {
     section.self-bar {
         width:100vw;
         border-radius:0px;
+        position:relative;
+        top:0px;
+        justify-content: center;
+        margin:0px;
     }
 
     section.self-bar img  {
-        margin-right:50px;
+        height:300px;
+        width:auto;
     }
-     
+
     /* portfolio links become stacked in column and resize */
     span.portfolio-child   {
         display:flex;
@@ -445,7 +451,7 @@ div.contact-section h2  {
         width:100%;
         margin-bottom: 50px;
     }
-   
+
     /* page title font shrink */
     span.link-block a>h3    {
         font-size:10px;
@@ -461,7 +467,6 @@ div.contact-section h2  {
     span.contact-info {
         flex-direction:column;
         align-items:center;
-        
     }
 
     span.contact-info p {
@@ -471,11 +476,7 @@ div.contact-section h2  {
     /* remove spacer used for page jumps */
     div.about-me-spacer {
         display:none;
-      }
-
-      
-
-      
+    }
 }
 
 
