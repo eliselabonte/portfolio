@@ -12,10 +12,20 @@ html{
     --black:black;
     --white:white;
 
+    --title-font:'Monoton', cursive;
+    --h2-font:'Fraunces', serif;
+    --p-font:'Encode Sans Condensed', sans-serif;
+
     /* remove horizontal scroll */
     overflow-x:hidden;
 }
 
+/* body style. Overflow-x hidden to remove horizontal scroll bar. */
+body   {
+    background: var(--orange-gradient);
+    /* width:100%; */
+    /* min-width: fit-content;} */
+}
 
 /* header/footer style. Image is royalty free and seamless. */
 header, footer    {
@@ -23,12 +33,6 @@ header, footer    {
     background-image: url(https://image.shutterstock.com/image-vector/seamless-pattern-abstract-vector-background-260nw-710903038.jpg);
     width:100%;
 
-}
-
-/* body style. Overflow-x hidden to remove horizontal scroll bar. */
-body   {
-    background: var(--orange-gradient);
-    width:100vw;
 }
 
 
@@ -72,20 +76,20 @@ li  {
 h1  {
     font-size: 40px;
     color:var(--black);
-    font-family: 'Monoton', cursive;
+    font-family: var(--title-font);
 }
 
 h2  {
     font-size: 30px;
     color:var(--black);
-    font-family: 'Fraunces', serif;
+    font-family: var(--h2-font);
     margin:5px;
 }
 
 h3  {
     font-size: 20px;
     color:var(--black);
-    font-family: 'Fraunces', serif;
+    font-family: var(--h2-font);
     margin:5px;
 }
 
@@ -114,7 +118,7 @@ form    {
 
 /* form style (contact section) */
 input, label   {
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: var(--p-font);
     
 }
 
@@ -129,7 +133,7 @@ button  {
     margin:5px;
     background: var(--blue-gradient);
     border-radius: 10px;
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: var(--p-font);
     text-transform:uppercase;
 }
 
@@ -221,28 +225,43 @@ main.content    {
 }
 
 /* float in front of self-bar */
-article.about-me-section, section.portfolio-container, div.contact-section   {
+article.main-child, div.contact-section   {
     z-index:1;
 }
 
-/* "work" show text vertically */
-h2.portfolio-title  {
-    color:var(--white);
-    font-size:40px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    line-height: 40px;
-    margin:20px;
-}
-
-/* holds link-container and portfolio-title */
-section.portfolio-container {
+article.main-child  {
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
+    align-items:center;
     justify-content:center;
     margin:10px;
     margin-top:50px;
     width:80vw;
+}
+
+/* show h2 text vertically */
+h2.article-title {
+    margin:20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color:var(--white);
+}
+
+/* for page jump */
+div.about-me-spacer     {
+    height:6vh;
+}
+
+/* about me paragraph style */
+div.about-me-p  {
+    border-radius: 0px 70px 70px 0px;
+    background: var(--blue-gradient);
+    margin-bottom:20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    border-left: 5px solid var(--teal-dark);
+    line-height:30px;
 }
 
 /* border on left, curved on right, wrap contents*/
@@ -290,42 +309,6 @@ span.link-block a img.most-recent {
     width:400px;
 }
 
-/* style for about-me */
-article.about-me-section    {
-    margin:20px;
-    margin-top:50px;
-    width:80vw;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-}
-
-/* show h2 text vertically */
-article.about-me-section h2 {
-    margin:20px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color:var(--white);
-}
-
-/* for page jump */
-div.about-me-spacer     {
-    height:6vh;
-}
-
-/* about me paragraph style */
-div.about-me-p  {
-    border-radius: 0px 70px 70px 0px;
-    background: var(--blue-gradient);
-    margin-bottom:20px;
-    padding-top:20px;
-    padding-right:20px;
-    padding-bottom:20px;
-    border-left: 5px solid var(--teal-dark);
-    line-height:30px;
-}
-
 /* contact section background is royalty-free and seamless. */
 div.contact-section     {
     width:100%;
@@ -360,7 +343,7 @@ span.contact-info p {
     margin-left:30px;
     margin-right:30px;
     font-size:30px;    
-    font-family: 'Fraunces', serif; 
+    font-family: var(--p-font); 
 }
 
 div.contact-section h2  {
@@ -375,17 +358,16 @@ div.contact-section h2  {
     header  {
         display:flex;
         flex-direction:row;
-        justify-content:space-around;
+        justify-content:space-between;
     }
 
     header h1   {
         font-size:1.5em;
     }
-
+    
     div.intro   {
         width:50%;
     }
-
 
     h2.title    {
         font-size: 1.5em;
@@ -395,7 +377,7 @@ div.contact-section h2  {
     nav   {
         text-align:right;
         padding:5px;
-        margin-right:50px;
+        /* margin-right:50px; */
     }
 
     .nav-list  {
@@ -417,13 +399,13 @@ div.contact-section h2  {
         display:none;
     }
 
-    /* about-me and portfolio changes */
     main.content    {
         margin:0px;
         margin-top:100px;
+        align-items: center;
     }
 
-    h2, p {
+    h2.article-title, p {
         font-size:1.5rem;
     }
 
@@ -432,24 +414,16 @@ div.contact-section h2  {
         width:100vw;
         border-radius:0px;
         position:relative;
+        left:0px;
         top:0px;
-        justify-content: center;
         margin:0px;
+        margin-bottom:20px;
+        justify-content: center;
     }
 
     section.self-bar img  {
         height:300px;
         width:auto;
-    }
-
-    /* portfolio links become stacked in column and resize */
-    span.portfolio-child   {
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-        width:100%;
-        margin-bottom: 50px;
     }
 
     /* page title font shrink */
@@ -458,19 +432,31 @@ div.contact-section h2  {
     }
 
     /* page image shrink */
-    span.link-block a>img   {
+    span.link-block a>img  {
         width:100%;
         height:auto;
+    }
+
+    article.main-child   {
+        width:95%;
+        margin:5px;
+        margin-top:20px;
+        align-items: flex-start;
+    }
+
+    span.link-block a>img.most-recent   {
+        width:100%;
     }
 
     /* shift number and email display to column */
     span.contact-info {
         flex-direction:column;
         align-items:center;
+        width:90%;
     }
 
     span.contact-info p {
-        font-size:15px;
+        font-size:25px;
     }
 
     /* remove spacer used for page jumps */
@@ -478,5 +464,3 @@ div.contact-section h2  {
         display:none;
     }
 }
-
-
